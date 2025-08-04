@@ -1,56 +1,96 @@
-import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconBrandYoutube } from "@tabler/icons-react";
+"use client"
+
+import {
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandLinkedin,
+  IconBrandX,
+  IconBrandYoutube,
+  IconMail,
+} from "@tabler/icons-react"
+import { motion, Variants } from "framer-motion"
+
+const iconVariants: Variants = {
+  hidden: { opacity: 0, y: 10 },
+  visible: (i: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.3,
+      ease: "easeOut",
+    },
+  }),
+  exit: (i: number = 0) => ({
+    opacity: 0,
+    y: 10,
+    transition: {
+      delay: i * 0.05,
+      duration: 0.2,
+      ease: "easeIn",
+    },
+  }),
+}
 
 export default function SocialMedia() {
+  const socialLinks = [
+    {
+      href: "https://github.com/your-username",
+      icon: IconBrandGithub,
+      label: "GitHub",
+    },
+    {
+      href: "https://youtube.com/@your-channel",
+      icon: IconBrandYoutube,
+      label: "YouTube",
+    },
+    {
+      href: "https://instagram.com/your-handle",
+      icon: IconBrandInstagram,
+      label: "Instagram",
+    },
+    {
+      href: "https://twitter.com/your-handle",
+      icon: IconBrandX,
+      label: "Twitter",
+    },
+    {
+      href: "https://linkedin.com/in/your-profile",
+      icon: IconBrandLinkedin,
+      label: "LinkedIn",
+    },
+    {
+      href: "https://linkedin.com/in/your-profile",
+      icon: IconMail,
+      label: "LinkedIn",
+    },
+  ]
+
   return (
-    <div className=" flex items-center gap-x-4 ">
-      <a
-        href="https://github.com/your-username"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub"
-        className="mk-side-elements-item"
-      >
-        <IconBrandGithub className={`hover:text-white transition-all duration-75 hover:scale-125`} />
-      </a>
-      <a
-        href="https://youtube.com/@your-channel"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="YouTube"
-        className="mk-side-elements-item"
-      >
-        <IconBrandYoutube className={`hover:text-white transition-all duration-75 hover:scale-125`} />
-      </a>
-
-      <a
-        href="https://instagram.com/your-handle"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram"
-        className="mk-side-elements-item"
-      >
-        <IconBrandInstagram  className={`hover:text-white transition-all duration-75 hover:scale-125`} />
-      </a>
-
-      <a
-        href="https://twitter.com/your-handle"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Twitter"
-        className="mk-side-elements-item"
-      >
-        <IconBrandX  className={`hover:text-white transition-all duration-75 hover:scale-125`} />
-      </a>
-
-      <a
-        href="https://linkedin.com/in/your-profile"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-        className="mk-side-elements-item"
-      >
-        <IconBrandLinkedin  className={`hover:text-white transition-all duration-75 hover:scale-125`} />
-      </a>
-    </div>
+    <motion.div
+      key="social"
+      className="flex items-center gap-x-4"
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      {socialLinks.map(({ href, icon: Icon, label }, i) => (
+        <motion.a
+          key={label}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={label}
+          className="mk-side-elements-item"
+          custom={i}
+          variants={iconVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
+          <Icon className="hover:text-white transition-all duration-75 hover:scale-125" />
+        </motion.a>
+      ))}
+    </motion.div>
   )
 }

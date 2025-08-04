@@ -37,7 +37,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
 }) => {
     const containerRef = useRef<HTMLDivElement | null>(null);
     const titleRef = useRef<HTMLHeadingElement | null>(null);
-    const spansRef = useRef<(HTMLSpanElement | null)[]>([]);
+    const spansRef = useRef<(HTMLSpanElement | null )[]>([]);
 
     const mouseRef = useRef({ x: 0, y: 0 });
     const cursorRef = useRef({ x: 0, y: 0 });
@@ -200,6 +200,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
                 {chars.map((char, i) => (
                     <span
                         key={i}
+                        // @ts-ignore
                         ref={(el) => (spansRef.current[i] = el)}
                         data-char={char}
                         className="inline-block"

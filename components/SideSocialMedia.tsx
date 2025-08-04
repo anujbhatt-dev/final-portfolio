@@ -1,8 +1,8 @@
-import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconBrandYoutube } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconBrandYoutube, IconMail } from "@tabler/icons-react";
 
 const SideSocialIcons = () => {
   return (
-    <div className=" flex flex-col items-center gap-y-4 ">
+    <div className=" flex flex-col items-center gap-y-2 lg:gap-y-4 ">
       <a
         href="https://github.com/your-username"
         target="_blank"
@@ -52,7 +52,17 @@ const SideSocialIcons = () => {
         <IconBrandLinkedin  className={`hover:text-white transition-all duration-75 hover:scale-125`} />
       </a>
 
-      <div className="h-24 bg-white/60 w-[1px]  " />
+      <a
+        href="https://linkedin.com/in/your-profile"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        className="mk-side-elements-item"
+      >
+        <IconMail className={`hover:text-white transition-all duration-75 hover:scale-125`} />
+      </a>
+
+      <div className="h-12 lg:h-24 bg-white/60 w-[1px]  " />
     </div>
   );
 };
