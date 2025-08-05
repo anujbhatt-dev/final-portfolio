@@ -2,7 +2,7 @@ import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX, Ico
 
 const SideSocialIcons = () => {
   return (
-    <div className=" flex flex-col items-center gap-y-2 lg:gap-y-4 ">
+    <div className="hidden lg:flex flex-col items-center gap-y-2 lg:gap-y-4 ">
       <a
         href="https://github.com/your-username"
         target="_blank"

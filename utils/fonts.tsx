@@ -1,4 +1,4 @@
-import { Anton, Inter, Poppins } from "next/font/google";
+import { Anton, Inter, Poppins, Geist_Mono } from "next/font/google";
 
 export const anton = Anton({
     weight:"400",  
@@ -12,4 +12,8 @@ export const poppins = Poppins({
 export const inter = Inter({
   weight:"400",  
   subsets:["latin"]
+})
+
+export const geistMono = Geist_Mono({
+  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900" ]
 })

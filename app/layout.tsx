@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased min-h-[100vh]  tracking-wide`}
+        className={`antialiased min-h-[100vh]  tracking-wide overflow-x-hidden`}
       >
         <Provider>
           {children}

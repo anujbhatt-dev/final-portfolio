@@ -76,7 +76,7 @@ export default function SocialMedia() {
     >
       {socialLinks.map(({ href, icon: Icon, label }, i) => (
         <motion.a
-          key={label}
+          key={label+i}
           href={href}
           target="_blank"
           rel="noopener noreferrer"

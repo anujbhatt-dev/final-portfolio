@@ -44,14 +44,14 @@ export default function Appbar() {
   }, [])
 
   return (
-    <div style={{zIndex:1000}} className={`${anton.className} px-6 py-6 pl-2 text-xl uppercase  flex items-center bg-zinc-500/10 rounded-full sticky top-2 lg:top-8 mx-auto ${isAtTop?"max-w-xl":"max-w-7xl"} lg:mx-auto transition-all duration-500 mb-4 border border-zinc-800 justify-between backdrop-blur-lg h-[7vh] gap-x-4 mx-4 max-w-[1200px]`}>
+    <div style={{zIndex:1000}} className={`${anton.className} px-6 py-6 pl-2 text-xl uppercase  flex items-center  rounded-full sticky top-2 lg:top-8 mx-auto ${isAtTop?"max-w-xl":"max-w-7xl"} lg:mx-auto transition-all duration-500 mb-4 border border-zinc-900/10 justify-between backdrop-blur-lg h-[7vh] gap-x-4 mx-4 max-w-[1200px]`}>
         <div>
             <Image className='h-10 w-10 lg:h-12 lg:w-12 object-cover rounded-full hover:shadow-[0px_0px_5px_rgba(0,0,0,0.9)] transition-all duration-75' src={MyPic} alt=""/>
         </div>
-        <div className={` hidden lg:flex ${!isAtTop && "flex-1"} justify-start items-center gap-x-12 transition-all duration-500`}>        
+        <div className={` hidden lg:flex ${!isAtTop && "flex-1"} justify-start items-center gap-x-4 transition-all duration-500`}>        
         {
             items.map((item,i)=>{
-                return <Link onClick={()=>setActiveIndex(i)} className={`${i==activeIndec && "text-green-600"} transition-all duration-75 hover:-translate-y-[1px] hover:text-shadow-xs text-shadow-white`} key={item.label} href={item.href}>
+                return <Link onClick={()=>setActiveIndex(i)} className={`${i==activeIndec && "bg-neutral-600/50"} py-2 px-4 rounded-sm transition-all duration-75 hover:-translate-y-[1px] hover:text-shadow-xs text-shadow-white`} key={item.label} href={item.href}>
                         {item.label}
                 </Link>
             })

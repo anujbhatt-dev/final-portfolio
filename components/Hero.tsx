@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import TextPressure from './ui/TextPressure/TextPressure'
-import { inter } from '@/utils/fonts'
+import { geistMono, inter, poppins } from '@/utils/fonts'
 import ShinyText from './ui/ShinyText/ShinyText'
 import KeyboardButton from './KeyboardButton'
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconMail } from '@tabler/icons-react'
@@ -9,7 +9,7 @@ import { IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconMail } from '@ta
 
 export default function Hero() {
   return (
-    <div className={`${inter.className} lg:h-[70vh] flex justify-center items-center max-w-7xl mx-auto text-center`}>
+    <div className={`${geistMono.className} lg:h-[70vh] flex justify-center items-center max-w-7xl mx-auto text-center`}>
         {/* large screen */}
         <div className='hidden lg:block '>
             <div className='text-7xl' style={{position: 'relative'}}>
