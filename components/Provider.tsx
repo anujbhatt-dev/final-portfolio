@@ -9,7 +9,7 @@ export default function Provider({children}:{children:ReactNode}) {
 
   return (
     <div className='min-h-[200vh] relative'>
-      <div style={{zIndex:1001}} className='z-10 text-white/60 fixed bottom-0 lg:left-24 left-2'>
+      <div style={{zIndex:1001}} className='z-10 text-white/60 fixed bottom-0 lg:left-16 left-2'>
         <SideSocialIcons/>
       </div>
       <div className='top-0 h-screen w-full absolute -z-1'>

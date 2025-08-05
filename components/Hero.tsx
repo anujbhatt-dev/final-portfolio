@@ -14,7 +14,7 @@ export default function Hero() {
         <div className='hidden lg:block '>
             <div className='text-7xl' style={{position: 'relative'}}>
             <TextPressure
-                text="Hello! I am John Doe"
+                text="Hello! I am Anuj Bhatt"
                 flex={true}
                 alpha={false}
                 stroke={false}
@@ -33,10 +33,10 @@ export default function Hero() {
             <ShinyText text="Mainly working in the JavaScript ecosystem, I’m a dedicated problem-solver who thrives on learning and building." disabled={false} speed={6} className='custom-class' />            
             </div>
             <div className='flex mt-16 perspective-distant gap-x-2'>
-              <KeyboardButton Icon={IconBrandLinkedin} href=""/>
-              <KeyboardButton Icon={IconMail} href=""/>
-              <KeyboardButton Icon={IconBrandInstagram} href=""/>
-              <KeyboardButton Icon={IconBrandX} href=""/>
+              <KeyboardButton Icon={IconBrandLinkedin} href={process.env.NEXT_PUBLIC_LINKEDIN || ''}/>
+              <KeyboardButton Icon={IconMail} href={process.env.NEXT_PUBLIC_EMAIL || ''}/>
+              <KeyboardButton Icon={IconBrandInstagram} href={process.env.NEXT_PUBLIC_INSTAGRAM || ''}/>
+              <KeyboardButton Icon={IconBrandX} href={process.env.NEXT_PUBLIC_X || ''}/>
             </div>
         </div>
 

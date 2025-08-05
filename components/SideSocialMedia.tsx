@@ -4,7 +4,7 @@ const SideSocialIcons = () => {
   return (
     <div className="hidden lg:flex flex-col items-center gap-y-2 lg:gap-y-4 ">
       <a
-        href="https://github.com/your-username"
+        href={process.env.NEXT_PUBLIC_GITHUB}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
@@ -12,18 +12,18 @@ const SideSocialIcons = () => {
       >
         <IconBrandGithub className={`hover:text-white transition-all duration-75 hover:scale-125`} />
       </a>
-      <a
-        href="https://youtube.com/@your-channel"
+      {/* <a
+        href={process.env.NEXT_PUBLIC_YOUTUBE}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="YouTube"
         className="mk-side-elements-item"
       >
         <IconBrandYoutube className={`hover:text-white transition-all duration-75 hover:scale-125`} />
-      </a>
+      </a> */}
 
       <a
-        href="https://instagram.com/your-handle"
+        href={process.env.NEXT_PUBLIC_INSTAGRAM}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
@@ -33,7 +33,7 @@ const SideSocialIcons = () => {
       </a>
 
       <a
-        href="https://twitter.com/your-handle"
+        href={process.env.NEXT_PUBLIC_X}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Twitter"
@@ -43,7 +43,7 @@ const SideSocialIcons = () => {
       </a>
 
       <a
-        href="https://linkedin.com/in/your-profile"
+        href={process.env.NEXT_PUBLIC_LINKEDIN}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -53,10 +53,10 @@ const SideSocialIcons = () => {
       </a>
 
       <a
-        href="https://linkedin.com/in/your-profile"
+        href={process.env.NEXT_PUBLIC_EMAIL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="LinkedIn"
+        aria-label="Email"
         className="mk-side-elements-item"
       >
         <IconMail className={`hover:text-white transition-all duration-75 hover:scale-125`} />

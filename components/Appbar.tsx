@@ -59,7 +59,7 @@ export default function Appbar() {
         </div>
         <div className='gap-x-4 flex items-center justify-center'>
           {!isAtTop && <SocialMedia />}
-          <a className='text-green-500 hover:text-white transition-all duration-75 hover:scale-125' href='/resume-sample.pdf' target='_blank'>
+          <a className='text-green-500 hover:text-white transition-all duration-75 hover:scale-125' href='/anujbhatt-cv.pdf' target='_blank'>
             <Tooltip title="Download CV" arrow>
               <DownloadIcon/>              
             </Tooltip>

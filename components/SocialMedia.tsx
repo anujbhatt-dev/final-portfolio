@@ -35,32 +35,32 @@ const iconVariants: Variants = {
 export default function SocialMedia() {
   const socialLinks = [
     {
-      href: "https://github.com/your-username",
+      href:process.env.NEXT_PUBLIC_GITHUB,
       icon: IconBrandGithub,
       label: "GitHub",
     },
+    // {
+    //   href:process.env.NEXT_PUBLIC_YOUTUBE,
+    //   icon: IconBrandYoutube,
+    //   label: "YouTube",
+    // },
     {
-      href: "https://youtube.com/@your-channel",
-      icon: IconBrandYoutube,
-      label: "YouTube",
-    },
-    {
-      href: "https://instagram.com/your-handle",
+      href:process.env.NEXT_PUBLIC_INSTAGRAM,
       icon: IconBrandInstagram,
       label: "Instagram",
     },
     {
-      href: "https://twitter.com/your-handle",
+      href:process.env.NEXT_PUBLIC_X,
       icon: IconBrandX,
       label: "Twitter",
     },
     {
-      href: "https://linkedin.com/in/your-profile",
+      href:process.env.NEXT_PUBLIC_LINKEDIN,
       icon: IconBrandLinkedin,
       label: "LinkedIn",
     },
     {
-      href: "https://linkedin.com/in/your-profile",
+      href:process.env.NEXT_PUBLIC_EMAIL,
       icon: IconMail,
       label: "LinkedIn",
     },
