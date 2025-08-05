@@ -1,7 +1,5 @@
 "use client";
-import { anton } from "@/utils/fonts";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,

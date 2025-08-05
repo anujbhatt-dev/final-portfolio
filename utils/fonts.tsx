@@ -6,7 +6,8 @@ export const anton = Anton({
   })
 
 export const poppins = Poppins({
-  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900" ]
+  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900" ],
+  subsets:["latin"]
 })
 
 export const inter = Inter({
@@ -15,5 +16,6 @@ export const inter = Inter({
 })
 
 export const geistMono = Geist_Mono({
-  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900" ]
+  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900" ],
+  subsets:["latin"]
 })
