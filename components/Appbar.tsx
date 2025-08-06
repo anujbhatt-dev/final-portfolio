@@ -4,7 +4,7 @@ import { anton } from '@/utils/fonts'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import MyPic from "@/public/my-pic.jpg"
+import MyPic from "@/public/my-pic.png"
 import { DownloadIcon } from 'lucide-react'
 import { Tooltip } from '@mui/material'
 import SocialMedia from './SocialMedia'
