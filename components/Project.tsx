@@ -1,3 +1,5 @@
+import { geistMono } from '@/utils/fonts';
+import { IconExternalLink, IconEye, IconLink } from '@tabler/icons-react';
 import { div, li } from 'framer-motion/client';
 import { ul } from 'framer-motion/m';
 import Image, { StaticImageData } from 'next/image';
@@ -11,7 +13,8 @@ export default function Project({
     images,
     features,
     id,
-    techstack
+    techstack,
+    links
 }:{
     title:string;
     description:string;
@@ -20,12 +23,16 @@ export default function Project({
     images?:(StaticImageData | string)[];
     features?:string[];
     id?:number;
-    techstack?:string[]
+    techstack?:string[];
+    links:{
+        code:string;
+        site:string;        
+    }
 }) {
   const [imgNumber,setImgNumber] = useState<number>(0)
 
   return (
-    <div className='max-w-7xl mx-auto leading-[28px] pb-8 mb-8 border-b border-neutral-800'>
+    <div className={`max-w-7xl mx-auto leading-[28px] pb-8 ${id!=3 && "border-b border-neutral-800 mb-8"}  `}>
         <h2 className='text-xl uppercase font-bold mb-6'>
             {id}{id && "."} {title}
         </h2>
@@ -76,13 +83,20 @@ export default function Project({
             </ul>
         }    
         {
-            images && <Image className='h-[40vh] lg:h-[50vh] w-auto rounded-lg object-contain my-8' src={images[imgNumber]} alt=""/>
+            images && <Image className='h-[40vh] lg:h-[30rem] w-auto rounded-lg object-contain my-8' src={images[imgNumber]} alt=""/>
         }
-        <div className='flex gap-x-2 justify-start items-center '>
+        <div className='flex gap-x-2 justify-start items-center flex-wrap'>
         {
             images && images.map((img,i)=><Image key={title+i} onClick={()=>setImgNumber(i)} className={`${i==imgNumber ? "outline-2 outline-green-500 outline-offset-4" : "outline-2 outline-transparent outline-offset-0"} h-[5rem] w-auto rounded-lg mt-4 transition-all duration-150 cursor-pointer object-cover`} src={img} alt=""/>)
         }
         </div>
+
+
+        <div className={`${geistMono.className} flex justify-end mt-8 px-2 uppercase text-green-500 gap-x-8 text-sm`}>
+            <a target='_blank' rel='noreferrer nofollow' href={links.code} className='flex gap-x-2 justify-between items-center'><span className='font-semibold'>See Code</span> <IconEye className=''/></a>
+            <a target='_blank' rel='noreferrer nofollow' href={links.site} className='flex gap-x-2 justify-between items-center'><span className='font-semibold'>Live Site</span> <IconExternalLink className=''/></a>
+        </div>
+
 
     </div>
   )

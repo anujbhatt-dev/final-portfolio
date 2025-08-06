@@ -3,6 +3,30 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { anton, geistMono } from '@/utils/fonts';
 import Project from './Project';
 import Naachogao from "@/public/naachogaao-landing.png"
+import NG1 from "@/public/ng-1.png"
+import NG2 from "@/public/ng-2.png"
+import NG3 from "@/public/ng-3.png"
+import AN1 from "@/public/an-1.png"
+import AN2 from "@/public/an-2.png"
+import AN3 from "@/public/an-3.png"
+import AN4 from "@/public/an-4.png"
+import AN5 from "@/public/an-5.png"
+import AN6 from "@/public/an-6.png"
+import AN7 from "@/public/an-7.png"
+import EE1 from "@/public/ee-1.png"
+import EE2 from "@/public/ee-2.png"
+import EE3 from "@/public/ee-3.png"
+import EE4 from "@/public/ee-4.png"
+import EE5 from "@/public/ee-5.png"
+import EE6 from "@/public/ee-6.png"
+import EE7 from "@/public/ee-7.png"
+import EE8 from "@/public/ee-8.png"
+import EE9 from "@/public/ee-9.png"
+import EE10 from "@/public/ee-10.png"
+import EE11 from "@/public/ee-11.png"
+import EE12 from "@/public/ee-12.png"
+import EE13 from "@/public/ee-13.png"
+
 import NaachogaoMob from "@/public/naachogaao-landing-mobile.png"
 import Anaira from "@/public/anaira.png"
 import AnairaMob from "@/public/anaira-mobile.png"
@@ -39,7 +63,11 @@ export default function RecentWork() {
               "React Bits"
             ]}
             id={1}
-            images={[Naachogao,NaachogaoMob]}
+            images={[Naachogao,NaachogaoMob,NG1,NG2,NG3]}
+            links={{
+              code:"https://github.com/anujbhatt-dev/muzer",
+              site:"https://naachogaao.anujbhatt.com/"
+            }}
         />
         <Project
             title={"Anaira - Ecommerce App"}
@@ -59,7 +87,35 @@ export default function RecentWork() {
               "AWS S3"
             ]}
             id={2}
-            images={[Anaira,AnairaMob]}
+            images={[Anaira,AnairaMob,AN1,AN2,AN3,AN4,AN5,AN6,AN7]}
+            links={{
+              code:"https://github.com/anujbhatt-dev/sanaira",
+              site:"https://anaira.style/"
+            }}
+        />
+        <Project
+            title={"Exim Education - Export-Import Learning Platform"}
+            description='Exim Education is a premier platform providing specialized training in Export-Import business operations. It offers online and offline courses designed by industry experts, empowering students and entrepreneurs to confidently navigate international trade.'
+            features={[
+              "Course Management System – Structured curriculum with modules, video lessons, and downloadable resources.",
+              "Student Dashboard – Personalized access to course progress, certificates, and support.",
+              "Payment Integration – Smooth enrollment process through secure online payment systems.",
+              "Responsive UI – Fully responsive design ensures smooth learning across all devices.",
+              "Blog & Knowledge Base – Regularly updated with tips, guides, and industry news to support learners."
+            ]}
+            techstack={[
+              "Reactjs",
+              "Scss",
+              "Razorpay",
+              "PWA",
+              "Google Analytics"
+            ]}
+            id={3}
+            images={[EE1,EE2,EE3,EE4,EE5,EE6,EE7,EE8,EE9,EE10,EE11,EE12,EE13]}
+            links={{
+              code:"https://github.com/anujbhatt-dev/exim_v2",
+              site:"https://eximeducation.com/"
+            }}
         />
       </div>
 

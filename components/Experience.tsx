@@ -10,10 +10,10 @@ export default function Experience() {
       content: (
         <div className="">
           <div className="font-normal text-neutral-800 md:text-sm dark:text-neutral-200 flex justify-between text-lg mb-12">
-               <div className="text-xl uppercase text-neutral-500">
-                    Apex Software
+               <div className="text-lg uppercase text-neutral-400">
+                    Apex Software, Dubai
                </div>
-               <div className="text-xl uppercase text-neutral-500">
+               <div className="text-sm uppercase text-neutral-400">
                     Sept 2024 - Present
                </div>
           </div>
@@ -38,14 +38,14 @@ export default function Experience() {
       ),
     },
     {
-      title: "Full Stack Developer",
+      title: "Frontend Developer",
       content: (
         <div>
           <div className="font-normal text-neutral-800 md:text-sm dark:text-neutral-200 flex justify-between text-lg mb-12">
-               <div className="text-xl uppercase text-neutral-500">
-                    Vedship Innovations Pvt Ltd
+               <div className="text-lg uppercase text-neutral-400">
+                    Vedship Innovations, Remote
                </div>
-               <div className="text-xl uppercase text-neutral-500">
+               <div className="text-sm uppercase text-neutral-400">
                     March 2021 - December 2023
                </div>
           </div>

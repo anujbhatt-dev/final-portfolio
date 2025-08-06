@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Provider from "@/components/Provider";
-import { anton } from "@/utils/fonts";
 
 
 

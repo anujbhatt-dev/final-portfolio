@@ -4,6 +4,7 @@ import React, { ReactNode } from 'react'
 import Appbar from './Appbar'
 import Beams from './ui/Beams/Beams'
 import SideSocialIcons from './SideSocialMedia'
+import Footer from './Footer'
 
 export default function Provider({children}:{children:ReactNode}) {
 
@@ -26,6 +27,7 @@ export default function Provider({children}:{children:ReactNode}) {
       </div>
         <Appbar/>
         {children}
+        <Footer/>
     </div>
   )
 }

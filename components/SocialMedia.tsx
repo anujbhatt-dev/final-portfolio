@@ -88,7 +88,7 @@ export default function SocialMedia() {
           animate="visible"
           exit="exit"
         >
-          <Icon className="hover:text-white transition-all duration-75 hover:scale-125" />
+          <Icon className="hover:text-green-500  transition-all duration-75 hover:scale-125 cursor-pointer" />
         </motion.a>
       ))}
     </motion.div>
