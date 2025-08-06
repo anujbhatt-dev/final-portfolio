@@ -44,7 +44,7 @@ export default function Hero() {
         <div className='mt-24 lg:hidden'>
             <div className={`text-5xl font-bold`} style={{position: 'relative'}}>
                 Hello! I am <br /> 
-                John Doe
+                ANuj Bhatt
             </div>
             <div className=' mt-4 text-center text-sm'>
                 A fullstack Web Developer
