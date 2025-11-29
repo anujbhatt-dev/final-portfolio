@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { anton } from '@/utils/fonts'
+import { geistMono } from '@/utils/fonts'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
@@ -44,20 +44,20 @@ export default function Appbar() {
   }, [])
 
   return (
-    <div style={{zIndex:1000}} className={`${anton.className} px-6 py-6 pl-2 text-xl uppercase  flex items-center  rounded-full sticky top-2 lg:top-8 mx-auto ${isAtTop?"max-w-sm":"max-w-7xl"} lg:mx-auto transition-all duration-500 mb-4 border border-zinc-900/10 justify-between backdrop-blur-lg h-[7vh] gap-x-4 mx-4 max-w-[1200px]`}>
+    <div style={{zIndex:1000}} className={`${geistMono.className} px-4 py-3 pl-2 text-sm uppercase flex items-center sticky top-2 lg:top-6 mx-auto ${isAtTop?"max-w-sm":"max-w-7xl"} lg:mx-auto transition-all duration-500 mb-2 justify-between gap-x-3 mx-4 max-w-[1200px] backdrop-blur-2xl rounded-full`}>
         <div>
-            <Image className='h-10 w-10 lg:h-12 lg:w-12 object-cover rounded-full hover:shadow-[0px_0px_5px_rgba(0,0,0,0.9)] transition-all duration-75' src={MyPic} alt=""/>
+            <Image className='shrink-0 h-9 w-9 lg:h-11 lg:w-11 object-cover rounded-full hover:shadow-[0px_0px_5px_rgba(0,0,0,0.9)] transition-all duration-75' src={MyPic} alt=""/>
         </div>
-        <div className={` hidden ${!isAtTop && "flex-1"} justify-start items-center gap-x-4 transition-all duration-500`}>        
+        <div className={`flex ${!isAtTop ? "flex-1" : ""} justify-start items-center gap-x-4 transition-all duration-500`}>        
         {
             items.map((item,i)=>{
-                return <Link onClick={()=>setActiveIndex(i)} className={`${i==activeIndec && "bg-neutral-600/50"} py-2 px-4 rounded-sm transition-all duration-75 hover:-translate-y-[1px] hover:text-shadow-xs text-shadow-white`} key={item.label} href={item.href}>
+                return <Link onClick={()=>setActiveIndex(i)} className={`${i==activeIndec ? "text-green-500" : ""} px-1 rounded-sm transition-all duration-75 hover:-translate-y-[1px] hover:text-green-400`} key={item.label} href={item.href}>
                         {item.label}
                 </Link>
             })
         }
         </div>
-        <div className='gap-x-4 flex items-center justify-center'>
+        <div className='gap-x-3 flex items-center justify-center'>
           {!isAtTop && <SocialMedia />}
           <a className='text-green-500 hover:text-white transition-all duration-75 hover:scale-125' href='/anujbhatt-cv.pdf' target='_blank'>
             <Tooltip title="Download CV" arrow>
