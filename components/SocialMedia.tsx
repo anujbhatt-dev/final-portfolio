@@ -69,7 +69,7 @@ export default function SocialMedia() {
   return (
     <motion.div
       key="social"
-      className="flex items-center gap-x-4"
+      className="flex items-center gap-x-4 mx-4 lg:mx-0"
       initial="hidden"
       animate="visible"
       exit="exit"

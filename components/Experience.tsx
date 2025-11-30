@@ -10,25 +10,25 @@ export default function Experience() {
       content: (
         <div className="">
           <div className="font-normal text-neutral-800 md:text-sm dark:text-neutral-200 flex justify-between text-lg mb-12">
-            <div className="text-lg uppercase text-neutral-400">
+            <div className="text-sm lg:text-lg uppercase text-neutral-400">
               Toouk, Dubai
             </div>
-            <div className="text-sm uppercase text-neutral-400">
+            <div className="text-xs lg:text-sm uppercase text-neutral-400">
               Aug 2024 - Present
             </div>
           </div>
           <ul className="list-disc pl-8 mb-12 text-neutral-500">
-            <li className="text-[16px] mb-4 leading-[24px]">
+            <li className="text-[14px] lg:text-[16px] mb-4 leading-[24px]">
               Building a modern ecosystem of real-world asset tokenization (RWA), 
               staking, referral system, and marketplace architecture using 
               Next.js, Node.js, PostgreSQL, Prisma, Strapi, and AWS.
             </li>
-            <li className="text-[16px] mb-4 leading-[24px]">
+            <li className="text-[14px] lg:text-[16px] mb-4 leading-[24px]">
               Developed full product modules including authentication, 
               KYC onboarding, staking packages, referral tracking,
               encrypted wallet flows, and admin dashboards.
             </li>
-            <li className="text-[16px] mb-4 leading-[24px]">
+            <li className="text-[14px] lg:text-[16px] mb-4 leading-[24px]">
               Implemented scalable backend APIs, database schemas, and 
               multi-environment deployments across Vercel, Plesk, and Strapi Cloud.
             </li>
@@ -50,19 +50,19 @@ export default function Experience() {
       content: (
         <div className="">
           <div className="font-normal text-neutral-800 md:text-sm dark:text-neutral-200 flex justify-between text-lg mb-12">
-            <div className="text-lg uppercase text-neutral-400">
+            <div className="text-sm lg:text-lg uppercase text-neutral-400">
               Apex Software, Dubai
             </div>
-            <div className="text-sm uppercase text-neutral-400">
+            <div className="text-xs lg:text-sm uppercase text-neutral-400">
               Sept 2024 - Present
             </div>
           </div>
           <ul className="list-disc pl-8 mb-12 text-neutral-500">
-            <li className="text-[16px] mb-4 leading-[24px]">
+            <li className="text-[14px] lg:text-[16px] mb-4 leading-[24px]">
               Developed and maintained web applications using React, Next.js, and
               TypeScript.
             </li>
-            <li className="text-[16px] mb-4 leading-[24px]">
+            <li className="text-[14px] lg:text-[16px] mb-4 leading-[24px]">
               Implemented responsive design and optimized performance for better
               user experience.
             </li>
@@ -84,20 +84,20 @@ export default function Experience() {
       content: (
         <div>
           <div className="font-normal text-neutral-800 md:text-sm dark:text-neutral-200 flex justify-between text-lg mb-12">
-            <div className="text-lg uppercase text-neutral-400">
+            <div className="text-sm lg:text-lg uppercase text-neutral-400">
               Vedship Innovations, Remote
             </div>
-            <div className="text-sm uppercase text-neutral-400">
+            <div className="text-xs lg:text-sm uppercase text-neutral-400">
               March 2021 - December 2023
             </div>
           </div>
           <ul className="list-disc pl-8 mb-12 text-neutral-500">
-            <li className="text-[16px] mb-4 leading-[24px]">
+            <li className="text-[14px] lg:text-[16px] mb-4 leading-[24px]">
               Built scalable, interactive web apps using React.js, Redux, and
               modern tech, with a focus on responsive design and performance
               optimization.
             </li>
-            <li className="text-[16px] mb-4 leading-[24px]">
+            <li className="text-[14px] lg:text-[16px] mb-4 leading-[24px]">
               Led end-to-end project development, from UI/UX design to frontend
               coding and backend integration, enhancing user engagement and
               satisfaction.

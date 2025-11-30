@@ -9,10 +9,10 @@ import Techstack from './Techstack'
 export default function Landing() {
   return (
     <div className="text-7xl  tracking-wide ">
-        <div className='min-h-[93vh] overflow-hidden uppercase p-2 border-b border-neutral-800'>
+        <div className='min-h-[93vh] overflow-hidden uppercase px-8 lg:p-2 border-b border-neutral-800'>
             <Hero/>
         </div>
-          <div className='px-4 lg:px-8  max-w-7xl mx-auto border-x border-neutral-800 '>
+          <div className='px-8 lg:px-8  max-w-7xl mx-auto border-x border-neutral-800 '>
             <div className='border-b border-neutral-800'>
                 <Techstack/>
             </div>

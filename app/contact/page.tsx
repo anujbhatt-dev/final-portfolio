@@ -88,7 +88,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="px-4 lg:px-8 ">
+    <main className="px-8 ">
       <div className="max-w-6xl mx-auto  pb-20 min-h-screen">
         <TopicHeading text="Let's make something that ships" pad />
         <div className="">
