@@ -63,7 +63,7 @@ export default function Appbar() {
             <SocialMedia />
           }
           </div>
-          <a className='text-green-500 hover:text-white transition-all duration-75 hover:scale-125' href='/anujbhatt-cv.pdf' target='_blank'>
+          <a className='text-green-500 hover:text-white transition-all duration-75 hover:scale-125' href='/ANUJ-BHATT-CV.pdf' target='_blank'>
             <Tooltip title="Download CV" arrow>
               <DownloadIcon/>              
             </Tooltip>
