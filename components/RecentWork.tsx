@@ -90,7 +90,7 @@ export default function RecentWork() {
             images={[Anaira,AnairaMob,AN1,AN2,AN3,AN4,AN5,AN6,AN7]}
             links={{
               code:"https://github.com/anujbhatt-dev/sanaira",
-              site:"https://anaira.space/"
+              site:"https://anaira.anujbhatt.space/"
             }}
         />
         <Project
