@@ -66,7 +66,7 @@ export default function RecentWork() {
             images={[Naachogao,NaachogaoMob,NG1,NG2,NG3]}
             links={{
               code:"https://github.com/anujbhatt-dev/muzer",
-              site:"https://naachogaao.anujbhatt.com/"
+              site:"https://naachogaao.anujbhatt.space/"
             }}
         />
         <Project
@@ -90,7 +90,7 @@ export default function RecentWork() {
             images={[Anaira,AnairaMob,AN1,AN2,AN3,AN4,AN5,AN6,AN7]}
             links={{
               code:"https://github.com/anujbhatt-dev/sanaira",
-              site:"https://anaira.style/"
+              site:"https://anaira.space/"
             }}
         />
         <Project
